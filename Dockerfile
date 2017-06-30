@@ -7,7 +7,7 @@ RUN apk update \
 && java -jar BuildTools.jar \
 && touch eula.txt && touch server.properties \
 && echo "eula=true" >> eula.txt \
-&& echo "level-name=/worlds/hywnn" >> server.properties
+&& echo "level-name=/worlds/WORLDNAME" >> server.properties
 
 EXPOSE 25565
 
