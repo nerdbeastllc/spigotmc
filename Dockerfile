@@ -6,8 +6,7 @@ RUN apk update \
 && curl -o BuildTools.jar https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar \
 && java -jar BuildTools.jar \
 && touch eula.txt && touch server.properties \
-&& echo "eula=true" >> eula.txt \
-&& echo "level-name=/worlds/WORLDNAME" >> server.properties
+&& echo "eula=true" >> eula.txt
 
 EXPOSE 25565
 
