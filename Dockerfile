@@ -4,7 +4,7 @@ FROM openjdk:8-jdk-alpine
 RUN apk update \
 && apk add git curl nano \
 && curl -o BuildTools.jar https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar \
-&& java -jar BuildTools.jar \
+&& java -jar BuildTools.jar --rev 1.12.1 \
 && touch eula.txt && touch server.properties \
 && echo "eula=true" >> eula.txt
 
